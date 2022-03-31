@@ -4,9 +4,8 @@
 for(let i = 10000;i<10050;i++){
     console.log(i);
 
-    if(i==10049){
-        for(let i = 10049;i>=10000;i--){
-            console.log(i);
-        }
-    }
+    
+}
+for (let i = 10000;i>9950;i--){
+    console.log(i);
 }
