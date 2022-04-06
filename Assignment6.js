@@ -1,11 +1,36 @@
-// Create a loop where the initial value is 10,000. You need to rotate the loop 50 times by using the increment and decrement operator twice.
+// Create a currency converter function from taka to USD, CAD, POUND, EURO etc 
 
 
-for(let i = 10000;i<10050;i++){
-    console.log(i);
 
-    
-}
-for (let i = 10000;i>9950;i--){
-    console.log(i);
-}
+
+
+let amount = parseFloat(prompt('Amount of taka '))
+let currency =prompt('What currency do you convet from taka ? option => [ usd , cad , pound , euro ]')
+
+
+
+
+
+ function curr(a,b){
+      
+    let total= 0;
+
+
+    switch(b){
+
+         case 'usd':total = a/86.21
+         break;
+         case 'cad':total = a/69.02
+         break;
+         case 'pound':total = a/112.88
+         break;
+         case 'euro':total =a/94.24
+         break;
+    }
+
+           console.log(`${amount} taka  = ${total} ${currency}`);
+
+ }
+
+
+curr(amount,currency)

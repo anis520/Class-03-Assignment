@@ -1,12 +1,26 @@
-
-
-// Create a loop that rotates 500 times using the for loop where you just pull out the numbers divisible by 3 and 4 
-
+// Create a BMI function for health
 
 
 
-for(let i = 1;i<=500;i++){
 
-       i%3==0 && i%4==0?console.log(i):'';
 
+let Weight = parseFloat(prompt('Your weight in kg ?'))
+let height = parseFloat(prompt('Your height in feet ?'))
+
+
+
+function bmical(a,b) {
+
+    let feetToMeter= b*.3048
+           let hEight= feetToMeter*feetToMeter
+       let bmi = a/hEight
+       
+       
+       console.log(`Your bmi is = ${bmi}`);
+
+    
 }
+
+
+
+bmical(Weight,height);
